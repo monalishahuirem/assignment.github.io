@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"
+      <head>
+           <meta charset="utf-8">
+           <meta name="viewport" content="width=device=width, initial-scale=1">
+           <title>THEOREM WITH PROOF</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+ <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      </head><center>
+      <body><p><strong><font color="purple" size="6">De Moivre's Theorem</font></strong></p>
+          <strong>STATEMENT:</strong> 
+<center><i>
+  <p>For all real values of n, cos n&theta; + i sin n&theta; is a value of (cos &theta; + i sin &theta;)<sup>n</sup>.</i></p></center>
+
+Written more fully, the theorem states that 
+
+    <i>“if n be integral, positive or negative, the value of (cos &theta; + i sin &theta;)<sup>n</sup> is cos n&theta; + i sin n&theta; ; if n be a fraction, positive or negative , one of the values of (cos &theta; + i sin &theta;)<sup>n</sup> is cos n&theta; + i sin n&theta; (the total number of values being equal to the denominator of n)”.</i>
+    
+    
+<p><strong>PROOF:</strong></p><p> <b>Case I:</b> When <i>n</i> is positive integer.<br/>
+
+  By actual multiplication, we have</p> 
+  
+  \begin{eqnarray*}
+    (cos \theta_{1} + i sin \theta_{1})(cos \theta_{2} + i sin \theta_{2})  &  = & cos \theta_{1}cos \theta_{2} - sin \theta_{1}sin \theta_{2}   + i(sin \theta_{1}cos \theta_{2}  + cos \theta_{1}sin \theta_{2})\\
+    &  = & cos (\theta_{1} + \theta_{2}) + i sin (\theta_{1} + \theta_{2}).
+\end{eqnarray*}
+Similarly,
+\begin{eqnarray*}
+(cos \theta_{1} + i sin \theta_{1})(cos \theta_{2} + i sin \theta_{2})(cos \theta_{3} + i sin \theta_{3})
+& = &\{ cos (\theta_{1} + \theta_{2}) + i sin (\theta_{1} + \theta_{2})\}(cos \theta_{3} + i sin \theta_{3})\\
+ & = & cos(\theta_{1} + \theta_{2} + \theta_{3}) + i sin(\theta_{1} + \theta_{2} + \theta_{3}) ,{\verb| as before|}.
+\end{eqnarray*}
+
+Proceeding in the way, the product of the <i>n</i> factors 
+\begin{eqnarray*}
+(cos \theta_{1} + i sin \theta_{1})(cos \theta_{2} + i sin \theta_{2})\cdots (cos \theta_{n} + i sin \theta_{n})
+& = & cos (\theta_{1} + \theta_{2} + \cdots + \theta_{n}) + i sin(\theta_{1} + \theta_{2} + \cdots + \theta_{n}).
+\end{eqnarray*}
+ Put in this identity &theta;<sub>1</sub> = &theta;<sub>2</sub> = · · · = &theta;<sub>n</sub> = &theta;.
+ Then , we have 
+ $$ (cos \theta + i sin \theta)^{n} = cos n\theta + i sin n\theta .$$
+
+<b>Case II:</b> When <i>n</i> is a negative integer.
+Let <i>n=-m</i>, then <i>m</i> is a positive integer, and 
+\begin{eqnarray*}
+    (cos \theta + i sin \theta)^{n}
+   & = & (cos \theta + i sin \theta)^{-m}\\
+   & = & \frac{1}{(cos \theta + i sin \theta)^{m}}\\
+   & = & \frac{1}{(cos m\theta + i sin m\theta)} \verb|  [by Case I]|\\
+   & = & \frac{cos m\theta - i sin m\theta}{(cos m\theta + i sin m \theta)(cos m\theta - i sin m \theta)}\\
+   & = & \frac{cos m\theta - i sin m\theta}{cos^{2} m\theta + sin^{2} m\theta}\\
+   & = & cos m\theta - i sin m\theta \\
+   & = & cos(-m) \theta + i sin (-m)\theta\\
+   & = & cos n\theta + i sin n\theta.
+\end{eqnarray*}
+
+<b>Case III:</b> When <i>n</i> is a fraction, positive or negative.
+
+$$ \verb| Let | n = \frac{p}{q}, \verb| where | q  \verb| is a positive integer and |  p \verb| is any integer , positive or negative.|$$
+  
+ \begin{eqnarray*}
+ \verb| Now , | (cos \frac{\theta}{q} + i sin \frac{\theta}{q})^{q} & = & cos (q \cdot \frac{\theta}{q}) + i sin (q \cdot \frac{\theta}{q})  \verb| , [by Case I]|\\
+ & = & cos \theta + i sin \theta .
+ \end{eqnarray*}
+ $$ \verb|Therefore , taking the | qth \verb| root of both sides, |\\
+ cos \frac{\theta}{q} + i sin \frac{\theta}{q} \verb| is one of the values of | (cos \theta + i sin \theta)^{\frac{1}{q}}.$$
+
+Raise each of these quantities to the <i>pth</i> power. Then , <em>one of the values of</em>
+\begin{eqnarray*}
+(cos \theta + i sin \theta)^{\frac{p}{q}} & = & (cos \frac{\theta}{q} + i sin \frac{\theta}{q})^{p}, \\  
+   i.e. ,& = & cos \frac{p\theta}{q} + i sin \frac{p\theta}{q}  \verb| .  [by Case I and Case II]|
+\end{eqnarray*}
+  Hence , <em>one of the values of </em>
+ (cos &theta; + i sin &theta;)<sup>n</sup> is cos n&theta; + i sin n&theta;.
+Thus , the theorem is established for <em> all the rational values of</em> <i>n</i>.
+
+<p><font color="red"><strong>Note*.</strong></font> <font color="maroon"><b>Even if <i>n</i> be <em>irrational</em>, <i>cos n&theta; + i sin n&theta;</i> is one of the values of <i>(cos &theta; + i sin &theta;)</i>, <br/>the total number of different values in this case being infinite. </b></font></p>
+
+</center>
+</body>
+</html>
